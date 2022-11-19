@@ -29,7 +29,7 @@ class _LoginState extends State<Login> {
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(50),
             child: Form(
               key: _formkey,
               child: Column(
@@ -39,12 +39,12 @@ class _LoginState extends State<Login> {
                   Container(
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/cofre.png",
+                      "assets/images/logo.png",
                       width: MediaQuery.of(context).size.width /3,
                     ),
                   ),
                   SizedBox(
-                    height: 10 * 3,
+                    height: 50 * 3,
                   ),
                    
                 

@@ -36,11 +36,11 @@ class _SplashState extends State<Splash> {
         children: [
           Padding(
             padding:
-            EdgeInsets.only(left: 20, right: 20, top: 44.92, bottom: 46.55),
+            EdgeInsets.only(left: 80, right: 20, top: 44.92, bottom: 46.55),
             child: Image.asset(
-              "assets/images/mensagem.png",
-              width: 559.67,
-              height: 109.14,
+              "assets/images/logo.png",
+              width: 259.67,
+              height: 90.14,
               alignment: Alignment.center,
             ),
           ),
