@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:onaccess/shared/components/cards/card_evento.dart';
+import 'package:onaccess/shared/components/cards/card_registre_se.dart';
 import 'package:onaccess/shared/components/carousel/carousel_eventos.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,10 +13,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home'),
+      backgroundColor: Colors.white,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: const [
+          CarouselEventos(),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: CardRegistreSe(),
+          )
+        ],
       ),
-      body: CarouselEventos(),
     );
   }
 }

@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:onaccess/shared/components/buttons/btn_azul.dart';
 import 'package:onaccess/shared/components/buttons/btn_branco.dart';
 
@@ -16,7 +14,7 @@ class _CardRegistreSeState extends State<CardRegistreSe> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
+      height: 177,
       width: 440,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(55)),
@@ -24,36 +22,43 @@ class _CardRegistreSeState extends State<CardRegistreSe> {
       ),
       child: Column(
         children: [
-          const Padding(padding: EdgeInsets.only(top: 25)),
+          const Padding(padding: EdgeInsets.only(top: 15)),
           const Text(
             "Não perca os eventos que\nestão acontecendo:",
-            style: TextStyle(fontSize: 26, color: Color(0xff797979)),
+            style: TextStyle(
+              fontSize: 19,
+              color: Color(0xff797979),
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          const Padding(padding: EdgeInsets.only(top: 25)),
+          const Padding(padding: EdgeInsets.only(top: 15)),
           Container(
-            height: 110,
+            height: 95,
             width: 440,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(100)),
               color: Color(0xffD9D9D9),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                BtnBranco(
-                  texto: "Entrar",
-                  altura: 60,
-                  largura: 160,
-                  tamanhoFonte: 18,
-                ),
-                const Padding(padding: EdgeInsets.only(left: 10)),
-                BtnAzul(
-                  texto: "Inscrever-se",
-                  altura: 60,
-                  largura: 160,
-                  tamanhoFonte: 18,
-                ),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  BtnBranco(
+                    texto: "Entrar",
+                    altura: 50,
+                    largura: 130,
+                    tamanhoFonte: 18,
+                  ),
+                  Padding(padding: EdgeInsets.only(left: 10)),
+                  BtnAzul(
+                    texto: "Inscrever-se",
+                    altura: 50,
+                    largura: 130,
+                    tamanhoFonte: 18,
+                  ),
+                ],
+              ),
             ),
           ),
         ],

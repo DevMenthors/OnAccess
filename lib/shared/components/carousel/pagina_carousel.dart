@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:onaccess/shared/components/cards/card_evento.dart';
 
 class PaginaCarousel extends StatefulWidget {
@@ -16,9 +14,10 @@ class _PaginaCarouselState extends State<PaginaCarousel> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue,
-      width: 300,
+      width: 280,
+      color: Colors.white,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: widget.listaCards,
       ),
     );
