@@ -1,28 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:onaccess/pages/Splash/splash.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:onaccess/pages/homepage/homepage.dart';
 import 'package:onaccess/shared/components/cards/card_evento.dart';
+
 void main() {
-  runApp(const Splash());
+  runApp(const OnAccess());
 }
 
-class Splash extends StatefulWidget {
-  const Splash({super.key});
+class OnAccess extends StatefulWidget {
+  const OnAccess({super.key});
 
   @override
-  State<Splash> createState() => _SplashState();
+  State<OnAccess> createState() => _OnAccessState();
 }
 
-class _SplashState extends State<Splash> {
+class _OnAccessState extends State<OnAccess> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Home'),
-        ),
-        body: CardEvento(),
-      ),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
