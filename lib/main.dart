@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onaccess/pages/Splash/splash.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-
+import 'package:onaccess/shared/components/cards/card_evento.dart';
 void main() {
   runApp(const Splash());
 }
@@ -21,7 +21,7 @@ class _SplashState extends State<Splash> {
         appBar: AppBar(
           title: const Text('Home'),
         ),
-        body: Teste(),
+        body: CardEvento(),
       ),
       debugShowCheckedModeBanner: false,
     );
