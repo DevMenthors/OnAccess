@@ -39,17 +39,19 @@ class _TesteState extends State<Teste> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Stack(children: [
- CarouselSlider(
-  options: CarouselOptions(height: 400.0),
-  items: [PAgina1(), Pagina2()],
- ),
- Container(
-  padding: EdgeInsets.all(30),
-  height: 30, color: Colors.red,)
-      ],),
-      
-
+      child: Stack(
+        children: [
+          CarouselSlider(
+            options: CarouselOptions(height: 400.0),
+            items: [PAgina1(), Pagina2()],
+          ),
+          Container(
+            padding: EdgeInsets.all(30),
+            height: 30,
+            color: Colors.red,
+          )
+        ],
+      ),
     );
   }
 }
@@ -65,10 +67,9 @@ class _EventoState extends State<Evento> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(children: [
-        Card(), Card(), Card()
-      ],) 
-    );
+        child: Column(
+      children: [Card(), Card(), Card()],
+    ));
   }
 }
 
@@ -82,19 +83,18 @@ class Card extends StatefulWidget {
 class _CardState extends State<Card> {
   String horario = "14h";
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(children: [
-        Image.network("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.online-image-editor.com%2F%3Flanguage%3Dportuguese&psig=AOvVaw1n7R89ZcdXnY5qmVb84Uwp&ust=1668955810902000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDtpsnDuvsCFQAAAAAdAAAAABAJ"),
-        Column(children: [
-                Text("20/08/2019"),
-        Text(this.horario)
-      ],)
-
-      ],)
-    );
+        child: Row(
+      children: [
+        Image.network(
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.online-image-editor.com%2F%3Flanguage%3Dportuguese&psig=AOvVaw1n7R89ZcdXnY5qmVb84Uwp&ust=1668955810902000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDtpsnDuvsCFQAAAAAdAAAAABAJ"),
+        Column(
+          children: [Text("20/08/2019"), Text(this.horario)],
+        )
+      ],
+    ));
   }
 }
 
@@ -110,7 +110,7 @@ class _PAgina1State extends State<PAgina1> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blue,
-      height: 50,      
+      height: 50,
     );
   }
 }
@@ -127,7 +127,7 @@ class _Pagina2State extends State<Pagina2> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.yellow,
-      height: 50,      
+      height: 50,
     );
   }
 }
