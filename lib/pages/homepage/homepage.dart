@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onaccess/constants/paleta_cores.dart';
 import 'package:onaccess/shared/components/cards/card_registre_se.dart';
 import 'package:onaccess/shared/components/carousel/carousel_eventos.dart';
 
@@ -13,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: PaletaCores.branco(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: const [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onaccess/constants/paleta_cores.dart';
 
 class BtnBranco extends StatelessWidget {
   const BtnBranco(
@@ -6,9 +7,12 @@ class BtnBranco extends StatelessWidget {
       required this.texto,
       required this.altura,
       required this.largura,
-      required this.tamanhoFonte});
-  final double altura, largura, tamanhoFonte;
+      required this.tamanhoFonte,
+      required this.tamanhoBorda,
+      required this.fontTipo});
+  final double altura, largura, tamanhoFonte, tamanhoBorda;
   final String texto;
+  final FontWeight fontTipo;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,17 +23,19 @@ class BtnBranco extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(Radius.circular(100)),
             border: Border.all(
-              color: const Color(0xff5491ED),
-              width: 4,
+              color: PaletaCores.azul01(),
+              width: tamanhoBorda,
             ),
-            color: const Color(0xffFFFFFF)),
+            color: PaletaCores.branco()),
         child: Center(
             child: Text(
           texto,
           style: TextStyle(
-              color: const Color(0xff5491ED),
-              fontSize: tamanhoFonte,
-              fontWeight: FontWeight.bold),
+            color: PaletaCores.azul01(),
+            fontSize: tamanhoFonte,
+            fontFamily: 'Baloo',
+            fontWeight: fontTipo,
+          ),
         )),
       ),
     );

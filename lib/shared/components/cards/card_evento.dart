@@ -37,7 +37,7 @@ class _CardEventoState extends State<CardEvento> {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontFamily: "Arial",
-            color: PaletaCores.cinzaFundo01(),
+            color: PaletaCores.cinza01(),
           ),
         ),
         const Padding(padding: EdgeInsets.all(5)),
@@ -71,7 +71,7 @@ class _CardEventoState extends State<CardEvento> {
                     widget.dataEvento,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: PaletaCores.azulTexto01(),
+                      color: PaletaCores.azul01(),
                     ),
                   ),
                 ),
@@ -90,7 +90,7 @@ class _CardEventoState extends State<CardEvento> {
                   child: Text(
                     widget.horaEvento,
                     style: TextStyle(
-                      color: PaletaCores.cinzaFundo01(),
+                      color: PaletaCores.cinza01(),
                     ),
                   ),
                 ),
