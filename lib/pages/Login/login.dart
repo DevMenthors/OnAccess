@@ -167,7 +167,7 @@ class _LoginState extends State<Login> {
   _open() async {
     if (!_formkey.currentState!.validate()) return;
 
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => primeira()));
+    // Navigator.push(
+    //     context, MaterialPageRoute(builder: (context) => primeira()));
   }
 }

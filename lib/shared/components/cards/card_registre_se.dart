@@ -14,7 +14,7 @@ class _CardRegistreSeState extends State<CardRegistreSe> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 177,
+      height: 185,
       width: 440,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(55)),
@@ -22,16 +22,17 @@ class _CardRegistreSeState extends State<CardRegistreSe> {
       ),
       child: Column(
         children: [
-          const Padding(padding: EdgeInsets.only(top: 15)),
+          const Padding(padding: EdgeInsets.only(top: 10)),
           const Text(
             "Não perca os eventos que\nestão acontecendo:",
             style: TextStyle(
-              fontSize: 19,
+              fontSize: 22,
               color: Color(0xff797979),
-              fontWeight: FontWeight.bold,
+              fontFamily: 'Baloo',
+              fontWeight: FontWeight.w600,
             ),
           ),
-          const Padding(padding: EdgeInsets.only(top: 15)),
+          const Padding(padding: EdgeInsets.only(top: 10)),
           Container(
             height: 95,
             width: 440,
@@ -48,14 +49,17 @@ class _CardRegistreSeState extends State<CardRegistreSe> {
                     texto: "Entrar",
                     altura: 50,
                     largura: 130,
-                    tamanhoFonte: 18,
+                    tamanhoFonte: 20,
+                    tamanhoBorda: 3,
+                    fontTipo: FontWeight.w700,
                   ),
                   Padding(padding: EdgeInsets.only(left: 10)),
                   BtnAzul(
                     texto: "Inscrever-se",
                     altura: 50,
-                    largura: 130,
-                    tamanhoFonte: 18,
+                    largura: 155,
+                    tamanhoFonte: 20,
+                    fontTipo: FontWeight.w900,
                   ),
                 ],
               ),
